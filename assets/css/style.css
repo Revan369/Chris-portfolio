@@ -7,7 +7,7 @@ body {
 
 header {
     background-color: #085c9c;
-    color: #94ff3cb5;
+    color: #94ff3c;
     text-align: center;
     padding: 20px;
 }
@@ -47,11 +47,13 @@ nav li {
 .work-image {
     width: 100%;
     max-width: 300px;
+    transition: -webkit-transform 0.3s; /* Add vendor prefix for Safari */
     transition: transform 0.3s;
     cursor: pointer;
 }
 
 .work-image:hover {
+    -webkit-transform: scale(1.1); /* Add vendor prefix for Safari */
     transform: scale(1.1);
 }
 
@@ -60,7 +62,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px;
-
 }
 
 .project.large {
@@ -79,6 +80,7 @@ footer {
     flex: 0 0 calc(50% - 5px);
     /* Two columns with 5px spacing */
     margin-bottom: 20px;
+    transition: -webkit-transform 0.3s; /* Add vendor prefix for Safari */
     transition: transform 0.3s;
     cursor: pointer;
 }
