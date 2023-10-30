@@ -5,3 +5,5 @@ first of all created this repo on github, primarily to allow ease of access to m
 
 
 I added the unfinished css and html for the site. 
+
+i have added placeholder images for now as i do not have any projects to showcase except this portfolio itself, so the links to each project page by clicking the images will return you to the portfolio.

@@ -16,6 +16,10 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    border-right: #085c9c;
+    margin-right: auto;
+}
 nav {
     position: absolute;
     top: 20px;
@@ -53,9 +57,10 @@ nav li {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 80%;
     margin: 0 auto;
     padding: 20px;
+    float: right;
 }
 
 .avatar {
@@ -68,6 +73,47 @@ nav li {
     padding: 20px;
     text-align: center;
 }
+
+.section {
+    padding: 20px;
+    text-align: center;
+}
+
+.sectioncontact {
+    background-color: #085c9c;
+    color: #94ff3c;
+    padding: 20px;
+    text-align: left;
+}
+
+gmail {
+    color: crimson;
+}
+
+
+#about{
+    display: flex;
+    
+}
+
+#projects{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contact{
+    display: flex;
+ 
+}
+
+.h2 {
+    display: flex;
+}
+
+.bio {
+    display: flex;
+}
+
 
 .work-image {
     width: 100%;
@@ -82,14 +128,10 @@ nav li {
     transform: scale(1.1);
 }
 
-footer {
-    background-color: #ff8420;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
+
 
 .project.large {
+    flex: auto;
     width: calc(100% - 10px);
     /* Subtract 10px for spacing */
 }
@@ -97,7 +139,7 @@ footer {
 .projects-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     /* Adjusted to "flex-start" */
 }
 
