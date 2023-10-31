@@ -21,19 +21,19 @@ h2 {
     margin-right: auto;
 }
 nav {
-    position: absolute;
-    top: 20px;
-    right: 3px;
+    position: absolute; 
+    top: 1px;
+    right: 1px;
 }
 
 nav ul {
-    list-style: none;
+    list-style: none;g
     padding: 0;
 }
 
 
 nav li {
-    margin: 10px;
+    margin: 5px;
     display: inline;
 }
 
@@ -52,7 +52,7 @@ nav li {
 }
 
 #nav li {
-    margin: 10px;
+    margin: 5px;
     display: inline;
 }
 
