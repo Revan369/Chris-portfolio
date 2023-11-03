@@ -1,59 +1,17 @@
+/* Reset some default styles */
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #e15d05;
-}
-
-header {
-    background-color: #085c9c;
-    color: #94ff3c;
-    text-align: left;
-    padding: 20px;
-}
-
-h1 {
+    display: block;
     margin: 0;
-}
-
-h2 {
-    border-right: #085c9c;
-    margin-right: auto;
-}
-nav {
-    position: absolute; 
-    top: 1px;
-    right: 1px;
-}
-
-nav ul {
-    list-style: none;g
-    padding: 0;
-}
-
-
-nav li {
-    margin: 5px;
-    display: inline;
-}
-
-#name {
-    float: left;
-    margin: 0;
-}
-
-#nav {
-    float: right;
-}
-
-#nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-#nav li {
-    margin: 5px;
-    display: inline;
+    /* Add margin: 0; for body */
 }
 
 .container {
@@ -63,17 +21,43 @@ nav li {
     float: right;
 }
 
-.avatar {
-    display: block;
-    margin: 0 auto;
-    border-radius: 50%;
-}
-
-.section {
+/* Header styles */
+header {
+    background-color: #085c9c;
+    color: #94ff3c;
+    text-align: left;
     padding: 20px;
-    text-align: center;
 }
 
+ h1 {
+    margin: 0;
+}
+
+ h2 {
+    border-right: 10px solid #085c9c;
+    /* Add 'solid' and specify border width */
+    margin-right: 50px;
+}
+
+/* Navigation styles */
+nav {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+nav li {
+    margin: 5px;
+    display: inline;
+}
+
+/* Section styles */
 .section {
     padding: 20px;
     text-align: center;
@@ -83,71 +67,95 @@ nav li {
     background-color: #085c9c;
     color: #94ff3c;
     padding: 20px;
-    text-align: left;
-}
-
-gmail {
-    color: crimson;
-}
-
-
-#about{
-    display: flex;
     
 }
 
-#projects{
+/* Contact information styles */
+
+.contact-info {
+    display: block; /* Change display to block */
+    margin: 10px 0; /* Add margin for spacing between items */
+}
+
+
+/* About, Projects, and Contact section styles */
+#about {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+#contact {
     display: flex;
     flex-wrap: wrap;
 }
 
-#contact{
-    display: flex;
- 
-}
-
+/* Common styles for h2 and bio */
 .h2 {
     display: flex;
+    justify-content: end;
+    
 }
 
 .bio {
     display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
 }
 
 
-.work-image {
+/* Avatar image styles */
+.avatar {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+/* Work images styles */
+.big-work-image {
     width: 100%;
-    max-width: 300px;
-    transition: -webkit-transform 0.3s; /* Add vendor prefix for Safari */
+    max-width: 600px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.big-work-image:hover {
+    transform: scale(1.1);
+}
+
+.work-image {
+    width: 50%;
+    max-width: 200px;
     transition: transform 0.3s;
     cursor: pointer;
 }
 
 .work-image:hover {
-    -webkit-transform: scale(1.1); /* Add vendor prefix for Safari */
     transform: scale(1.1);
 }
 
-
-
+/* Large project style */
 .project.large {
     flex: auto;
-    width: calc(100% - 10px);
-    /* Subtract 10px for spacing */
+    width: calc(50% - 5px);
+    margin-bottom: 20px;
+    /* Add margin-bottom for consistency */
 }
 
+/* Projects container styles */
 .projects-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* Adjusted to "flex-start" */
 }
 
+/* Project styles */
 .project {
     flex: 0 0 calc(50% - 5px);
-    /* Two columns with 5px spacing */
     margin-bottom: 20px;
-    transition: -webkit-transform 0.3s; /* Add vendor prefix for Safari */
     transition: transform 0.3s;
     cursor: pointer;
 }
