@@ -71,7 +71,7 @@ nav li {
 }
 
 /* Contact information styles */
-
+/*tried to make contact info appear vertically on individual lines*/
 .contact-info {
     display: block; /* Change display to block */
     margin: 10px 0; /* Add margin for spacing between items */
